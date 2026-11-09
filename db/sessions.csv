@@ -1,0 +1,124 @@
+circuit_key,circuit_short_name,country_code,country_key,country_name,date_end,date_start,gmt_offset,is_cancelled,location,meeting_key,session_key,session_name,session_type,year
+63,Sakhir,BRN,36,Bahrain,2024-02-21 16:00:00+00:00,2024-02-21 07:00:00+00:00,03:00:00,False,Sakhir,1228,9462,Day 1,Practice,2024
+63,Sakhir,BRN,36,Bahrain,2024-02-22 16:00:00+00:00,2024-02-22 07:00:00+00:00,03:00:00,False,Sakhir,1228,9463,Day 2,Practice,2024
+63,Sakhir,BRN,36,Bahrain,2024-02-23 16:00:00+00:00,2024-02-23 07:00:00+00:00,03:00:00,False,Sakhir,1228,9464,Day 3,Practice,2024
+63,Sakhir,BRN,36,Bahrain,2024-02-29 12:30:00+00:00,2024-02-29 11:30:00+00:00,03:00:00,False,Sakhir,1229,9465,Practice 1,Practice,2024
+63,Sakhir,BRN,36,Bahrain,2024-02-29 16:00:00+00:00,2024-02-29 15:00:00+00:00,03:00:00,False,Sakhir,1229,9466,Practice 2,Practice,2024
+63,Sakhir,BRN,36,Bahrain,2024-03-01 13:30:00+00:00,2024-03-01 12:30:00+00:00,03:00:00,False,Sakhir,1229,9467,Practice 3,Practice,2024
+63,Sakhir,BRN,36,Bahrain,2024-03-01 17:00:00+00:00,2024-03-01 16:00:00+00:00,03:00:00,False,Sakhir,1229,9468,Qualifying,Qualifying,2024
+63,Sakhir,BRN,36,Bahrain,2024-03-02 17:00:00+00:00,2024-03-02 15:00:00+00:00,03:00:00,False,Sakhir,1229,9472,Race,Race,2024
+149,Jeddah,KSA,153,Saudi Arabia,2024-03-07 14:30:00+00:00,2024-03-07 13:30:00+00:00,03:00:00,False,Jeddah,1230,9473,Practice 1,Practice,2024
+149,Jeddah,KSA,153,Saudi Arabia,2024-03-07 18:10:00+00:00,2024-03-07 17:10:00+00:00,03:00:00,False,Jeddah,1230,9474,Practice 2,Practice,2024
+149,Jeddah,KSA,153,Saudi Arabia,2024-03-08 14:30:00+00:00,2024-03-08 13:30:00+00:00,03:00:00,False,Jeddah,1230,9475,Practice 3,Practice,2024
+149,Jeddah,KSA,153,Saudi Arabia,2024-03-08 18:00:00+00:00,2024-03-08 17:00:00+00:00,03:00:00,False,Jeddah,1230,9476,Qualifying,Qualifying,2024
+149,Jeddah,KSA,153,Saudi Arabia,2024-03-09 19:00:00+00:00,2024-03-09 17:00:00+00:00,03:00:00,False,Jeddah,1230,9480,Race,Race,2024
+10,Melbourne,AUS,5,Australia,2024-03-22 02:30:00+00:00,2024-03-22 01:30:00+00:00,11:00:00,False,Melbourne,1231,9481,Practice 1,Practice,2024
+10,Melbourne,AUS,5,Australia,2024-03-22 06:00:00+00:00,2024-03-22 05:00:00+00:00,11:00:00,False,Melbourne,1231,9482,Practice 2,Practice,2024
+10,Melbourne,AUS,5,Australia,2024-03-23 02:30:00+00:00,2024-03-23 01:30:00+00:00,11:00:00,False,Melbourne,1231,9483,Practice 3,Practice,2024
+10,Melbourne,AUS,5,Australia,2024-03-23 06:00:00+00:00,2024-03-23 05:00:00+00:00,11:00:00,False,Melbourne,1231,9484,Qualifying,Qualifying,2024
+10,Melbourne,AUS,5,Australia,2024-03-24 06:00:00+00:00,2024-03-24 04:00:00+00:00,11:00:00,False,Melbourne,1231,9488,Race,Race,2024
+46,Suzuka,JPN,4,Japan,2024-04-05 03:30:00+00:00,2024-04-05 02:30:00+00:00,09:00:00,False,Suzuka,1232,9489,Practice 1,Practice,2024
+46,Suzuka,JPN,4,Japan,2024-04-05 07:00:00+00:00,2024-04-05 06:00:00+00:00,09:00:00,False,Suzuka,1232,9490,Practice 2,Practice,2024
+46,Suzuka,JPN,4,Japan,2024-04-06 03:30:00+00:00,2024-04-06 02:30:00+00:00,09:00:00,False,Suzuka,1232,9491,Practice 3,Practice,2024
+46,Suzuka,JPN,4,Japan,2024-04-06 07:00:00+00:00,2024-04-06 06:00:00+00:00,09:00:00,False,Suzuka,1232,9492,Qualifying,Qualifying,2024
+46,Suzuka,JPN,4,Japan,2024-04-07 07:00:00+00:00,2024-04-07 05:00:00+00:00,09:00:00,False,Suzuka,1232,9496,Race,Race,2024
+49,Shanghai,CHN,53,China,2024-04-19 04:30:00+00:00,2024-04-19 03:30:00+00:00,08:00:00,False,Shanghai,1233,9663,Practice 1,Practice,2024
+49,Shanghai,CHN,53,China,2024-04-19 08:14:00+00:00,2024-04-19 07:30:00+00:00,08:00:00,False,Shanghai,1233,9668,Sprint Qualifying,Qualifying,2024
+49,Shanghai,CHN,53,China,2024-04-20 04:00:00+00:00,2024-04-20 03:00:00+00:00,08:00:00,False,Shanghai,1233,9672,Sprint,Race,2024
+49,Shanghai,CHN,53,China,2024-04-20 08:00:00+00:00,2024-04-20 07:00:00+00:00,08:00:00,False,Shanghai,1233,9664,Qualifying,Qualifying,2024
+49,Shanghai,CHN,53,China,2024-04-21 09:00:00+00:00,2024-04-21 07:00:00+00:00,08:00:00,False,Shanghai,1233,9673,Race,Race,2024
+151,Miami,USA,19,United States,2024-05-03 17:30:00+00:00,2024-05-03 16:30:00+00:00,-04:00:00,False,Miami,1234,9497,Practice 1,Practice,2024
+151,Miami,USA,19,United States,2024-05-03 21:14:00+00:00,2024-05-03 20:30:00+00:00,-04:00:00,False,Miami,1234,9502,Sprint Qualifying,Qualifying,2024
+151,Miami,USA,19,United States,2024-05-04 17:00:00+00:00,2024-05-04 16:00:00+00:00,-04:00:00,False,Miami,1234,9506,Sprint,Race,2024
+151,Miami,USA,19,United States,2024-05-04 21:00:00+00:00,2024-05-04 20:00:00+00:00,-04:00:00,False,Miami,1234,9498,Qualifying,Qualifying,2024
+151,Miami,USA,19,United States,2024-05-05 22:00:00+00:00,2024-05-05 20:00:00+00:00,-04:00:00,False,Miami,1234,9507,Race,Race,2024
+6,Imola,ITA,13,Italy,2024-05-17 12:30:00+00:00,2024-05-17 11:30:00+00:00,02:00:00,False,Imola,1235,9508,Practice 1,Practice,2024
+6,Imola,ITA,13,Italy,2024-05-17 16:00:00+00:00,2024-05-17 15:00:00+00:00,02:00:00,False,Imola,1235,9509,Practice 2,Practice,2024
+6,Imola,ITA,13,Italy,2024-05-18 11:30:00+00:00,2024-05-18 10:30:00+00:00,02:00:00,False,Imola,1235,9510,Practice 3,Practice,2024
+6,Imola,ITA,13,Italy,2024-05-18 15:00:00+00:00,2024-05-18 14:00:00+00:00,02:00:00,False,Imola,1235,9511,Qualifying,Qualifying,2024
+6,Imola,ITA,13,Italy,2024-05-19 15:00:00+00:00,2024-05-19 13:00:00+00:00,02:00:00,False,Imola,1235,9515,Race,Race,2024
+22,Monte Carlo,MON,114,Monaco,2024-05-24 12:30:00+00:00,2024-05-24 11:30:00+00:00,02:00:00,False,Monaco,1236,9516,Practice 1,Practice,2024
+22,Monte Carlo,MON,114,Monaco,2024-05-24 16:00:00+00:00,2024-05-24 15:00:00+00:00,02:00:00,False,Monaco,1236,9517,Practice 2,Practice,2024
+22,Monte Carlo,MON,114,Monaco,2024-05-25 11:30:00+00:00,2024-05-25 10:30:00+00:00,02:00:00,False,Monaco,1236,9518,Practice 3,Practice,2024
+22,Monte Carlo,MON,114,Monaco,2024-05-25 15:00:00+00:00,2024-05-25 14:00:00+00:00,02:00:00,False,Monaco,1236,9519,Qualifying,Qualifying,2024
+22,Monte Carlo,MON,114,Monaco,2024-05-26 15:00:00+00:00,2024-05-26 13:00:00+00:00,02:00:00,False,Monaco,1236,9523,Race,Race,2024
+23,Montreal,CAN,46,Canada,2024-06-07 18:30:00+00:00,2024-06-07 17:30:00+00:00,-04:00:00,False,Montréal,1237,9524,Practice 1,Practice,2024
+23,Montreal,CAN,46,Canada,2024-06-07 22:00:00+00:00,2024-06-07 21:00:00+00:00,-04:00:00,False,Montréal,1237,9525,Practice 2,Practice,2024
+23,Montreal,CAN,46,Canada,2024-06-08 17:30:00+00:00,2024-06-08 16:30:00+00:00,-04:00:00,False,Montréal,1237,9526,Practice 3,Practice,2024
+23,Montreal,CAN,46,Canada,2024-06-08 21:00:00+00:00,2024-06-08 20:00:00+00:00,-04:00:00,False,Montréal,1237,9527,Qualifying,Qualifying,2024
+23,Montreal,CAN,46,Canada,2024-06-09 20:00:00+00:00,2024-06-09 18:00:00+00:00,-04:00:00,False,Montréal,1237,9531,Race,Race,2024
+15,Catalunya,ESP,1,Spain,2024-06-21 12:30:00+00:00,2024-06-21 11:30:00+00:00,02:00:00,False,Barcelona,1238,9532,Practice 1,Practice,2024
+15,Catalunya,ESP,1,Spain,2024-06-21 16:00:00+00:00,2024-06-21 15:00:00+00:00,02:00:00,False,Barcelona,1238,9533,Practice 2,Practice,2024
+15,Catalunya,ESP,1,Spain,2024-06-22 11:30:00+00:00,2024-06-22 10:30:00+00:00,02:00:00,False,Barcelona,1238,9534,Practice 3,Practice,2024
+15,Catalunya,ESP,1,Spain,2024-06-22 15:00:00+00:00,2024-06-22 14:00:00+00:00,02:00:00,False,Barcelona,1238,9535,Qualifying,Qualifying,2024
+15,Catalunya,ESP,1,Spain,2024-06-23 15:00:00+00:00,2024-06-23 13:00:00+00:00,02:00:00,False,Barcelona,1238,9539,Race,Race,2024
+19,Spielberg,AUT,17,Austria,2024-06-28 11:30:00+00:00,2024-06-28 10:30:00+00:00,02:00:00,False,Spielberg,1239,9540,Practice 1,Practice,2024
+19,Spielberg,AUT,17,Austria,2024-06-28 15:14:00+00:00,2024-06-28 14:30:00+00:00,02:00:00,False,Spielberg,1239,9545,Sprint Qualifying,Qualifying,2024
+19,Spielberg,AUT,17,Austria,2024-06-29 11:00:00+00:00,2024-06-29 10:00:00+00:00,02:00:00,False,Spielberg,1239,9549,Sprint,Race,2024
+19,Spielberg,AUT,17,Austria,2024-06-29 15:00:00+00:00,2024-06-29 14:00:00+00:00,02:00:00,False,Spielberg,1239,9541,Qualifying,Qualifying,2024
+19,Spielberg,AUT,17,Austria,2024-06-30 15:00:00+00:00,2024-06-30 13:00:00+00:00,02:00:00,False,Spielberg,1239,9550,Race,Race,2024
+2,Silverstone,GBR,2,United Kingdom,2024-07-05 12:30:00+00:00,2024-07-05 11:30:00+00:00,01:00:00,False,Silverstone,1240,9551,Practice 1,Practice,2024
+2,Silverstone,GBR,2,United Kingdom,2024-07-05 16:00:00+00:00,2024-07-05 15:00:00+00:00,01:00:00,False,Silverstone,1240,9552,Practice 2,Practice,2024
+2,Silverstone,GBR,2,United Kingdom,2024-07-06 11:30:00+00:00,2024-07-06 10:30:00+00:00,01:00:00,False,Silverstone,1240,9553,Practice 3,Practice,2024
+2,Silverstone,GBR,2,United Kingdom,2024-07-06 15:00:00+00:00,2024-07-06 14:00:00+00:00,01:00:00,False,Silverstone,1240,9554,Qualifying,Qualifying,2024
+2,Silverstone,GBR,2,United Kingdom,2024-07-07 16:00:00+00:00,2024-07-07 14:00:00+00:00,01:00:00,False,Silverstone,1240,9558,Race,Race,2024
+4,Hungaroring,HUN,14,Hungary,2024-07-19 12:30:00+00:00,2024-07-19 11:30:00+00:00,02:00:00,False,Budapest,1241,9559,Practice 1,Practice,2024
+4,Hungaroring,HUN,14,Hungary,2024-07-19 16:00:00+00:00,2024-07-19 15:00:00+00:00,02:00:00,False,Budapest,1241,9560,Practice 2,Practice,2024
+4,Hungaroring,HUN,14,Hungary,2024-07-20 11:30:00+00:00,2024-07-20 10:30:00+00:00,02:00:00,False,Budapest,1241,9561,Practice 3,Practice,2024
+4,Hungaroring,HUN,14,Hungary,2024-07-20 15:00:00+00:00,2024-07-20 14:00:00+00:00,02:00:00,False,Budapest,1241,9562,Qualifying,Qualifying,2024
+4,Hungaroring,HUN,14,Hungary,2024-07-21 15:00:00+00:00,2024-07-21 13:00:00+00:00,02:00:00,False,Budapest,1241,9566,Race,Race,2024
+7,Spa-Francorchamps,BEL,16,Belgium,2024-07-26 12:30:00+00:00,2024-07-26 11:30:00+00:00,02:00:00,False,Spa-Francorchamps,1242,9567,Practice 1,Practice,2024
+7,Spa-Francorchamps,BEL,16,Belgium,2024-07-26 16:00:00+00:00,2024-07-26 15:00:00+00:00,02:00:00,False,Spa-Francorchamps,1242,9568,Practice 2,Practice,2024
+7,Spa-Francorchamps,BEL,16,Belgium,2024-07-27 11:30:00+00:00,2024-07-27 10:30:00+00:00,02:00:00,False,Spa-Francorchamps,1242,9569,Practice 3,Practice,2024
+7,Spa-Francorchamps,BEL,16,Belgium,2024-07-27 15:00:00+00:00,2024-07-27 14:00:00+00:00,02:00:00,False,Spa-Francorchamps,1242,9570,Qualifying,Qualifying,2024
+7,Spa-Francorchamps,BEL,16,Belgium,2024-07-28 15:00:00+00:00,2024-07-28 13:00:00+00:00,02:00:00,False,Spa-Francorchamps,1242,9574,Race,Race,2024
+55,Zandvoort,NED,133,Netherlands,2024-08-23 11:30:00+00:00,2024-08-23 10:30:00+00:00,02:00:00,False,Zandvoort,1243,9575,Practice 1,Practice,2024
+55,Zandvoort,NED,133,Netherlands,2024-08-23 15:00:00+00:00,2024-08-23 14:00:00+00:00,02:00:00,False,Zandvoort,1243,9576,Practice 2,Practice,2024
+55,Zandvoort,NED,133,Netherlands,2024-08-24 10:30:00+00:00,2024-08-24 09:30:00+00:00,02:00:00,False,Zandvoort,1243,9577,Practice 3,Practice,2024
+55,Zandvoort,NED,133,Netherlands,2024-08-24 14:00:00+00:00,2024-08-24 13:00:00+00:00,02:00:00,False,Zandvoort,1243,9578,Qualifying,Qualifying,2024
+55,Zandvoort,NED,133,Netherlands,2024-08-25 15:00:00+00:00,2024-08-25 13:00:00+00:00,02:00:00,False,Zandvoort,1243,9582,Race,Race,2024
+39,Monza,ITA,13,Italy,2024-08-30 12:30:00+00:00,2024-08-30 11:30:00+00:00,02:00:00,False,Monza,1244,9583,Practice 1,Practice,2024
+39,Monza,ITA,13,Italy,2024-08-30 16:00:00+00:00,2024-08-30 15:00:00+00:00,02:00:00,False,Monza,1244,9584,Practice 2,Practice,2024
+39,Monza,ITA,13,Italy,2024-08-31 11:30:00+00:00,2024-08-31 10:30:00+00:00,02:00:00,False,Monza,1244,9585,Practice 3,Practice,2024
+39,Monza,ITA,13,Italy,2024-08-31 15:00:00+00:00,2024-08-31 14:00:00+00:00,02:00:00,False,Monza,1244,9586,Qualifying,Qualifying,2024
+39,Monza,ITA,13,Italy,2024-09-01 15:00:00+00:00,2024-09-01 13:00:00+00:00,02:00:00,False,Monza,1244,9590,Race,Race,2024
+144,Baku,AZE,30,Azerbaijan,2024-09-13 10:30:00+00:00,2024-09-13 09:30:00+00:00,04:00:00,False,Baku,1245,9591,Practice 1,Practice,2024
+144,Baku,AZE,30,Azerbaijan,2024-09-13 14:00:00+00:00,2024-09-13 13:00:00+00:00,04:00:00,False,Baku,1245,9592,Practice 2,Practice,2024
+144,Baku,AZE,30,Azerbaijan,2024-09-14 09:30:00+00:00,2024-09-14 08:30:00+00:00,04:00:00,False,Baku,1245,9593,Practice 3,Practice,2024
+144,Baku,AZE,30,Azerbaijan,2024-09-14 13:00:00+00:00,2024-09-14 12:00:00+00:00,04:00:00,False,Baku,1245,9594,Qualifying,Qualifying,2024
+144,Baku,AZE,30,Azerbaijan,2024-09-15 13:00:00+00:00,2024-09-15 11:00:00+00:00,04:00:00,False,Baku,1245,9598,Race,Race,2024
+61,Singapore,SGP,157,Singapore,2024-09-20 10:30:00+00:00,2024-09-20 09:30:00+00:00,08:00:00,False,Marina Bay,1246,9599,Practice 1,Practice,2024
+61,Singapore,SGP,157,Singapore,2024-09-20 14:00:00+00:00,2024-09-20 13:00:00+00:00,08:00:00,False,Marina Bay,1246,9600,Practice 2,Practice,2024
+61,Singapore,SGP,157,Singapore,2024-09-21 10:30:00+00:00,2024-09-21 09:30:00+00:00,08:00:00,False,Marina Bay,1246,9601,Practice 3,Practice,2024
+61,Singapore,SGP,157,Singapore,2024-09-21 14:00:00+00:00,2024-09-21 13:00:00+00:00,08:00:00,False,Marina Bay,1246,9602,Qualifying,Qualifying,2024
+61,Singapore,SGP,157,Singapore,2024-09-22 14:00:00+00:00,2024-09-22 12:00:00+00:00,08:00:00,False,Marina Bay,1246,9606,Race,Race,2024
+9,Austin,USA,19,United States,2024-10-18 18:30:00+00:00,2024-10-18 17:30:00+00:00,-05:00:00,False,Austin,1247,9607,Practice 1,Practice,2024
+9,Austin,USA,19,United States,2024-10-18 22:14:00+00:00,2024-10-18 21:30:00+00:00,-05:00:00,False,Austin,1247,9612,Sprint Qualifying,Qualifying,2024
+9,Austin,USA,19,United States,2024-10-19 19:00:00+00:00,2024-10-19 18:00:00+00:00,-05:00:00,False,Austin,1247,9616,Sprint,Race,2024
+9,Austin,USA,19,United States,2024-10-19 23:00:00+00:00,2024-10-19 22:00:00+00:00,-05:00:00,False,Austin,1247,9608,Qualifying,Qualifying,2024
+9,Austin,USA,19,United States,2024-10-20 21:00:00+00:00,2024-10-20 19:00:00+00:00,-05:00:00,False,Austin,1247,9617,Race,Race,2024
+65,Mexico City,MEX,8,Mexico,2024-10-25 19:30:00+00:00,2024-10-25 18:30:00+00:00,-06:00:00,False,Mexico City,1248,9618,Practice 1,Practice,2024
+65,Mexico City,MEX,8,Mexico,2024-10-25 23:30:00+00:00,2024-10-25 22:00:00+00:00,-06:00:00,False,Mexico City,1248,9619,Practice 2,Practice,2024
+65,Mexico City,MEX,8,Mexico,2024-10-26 18:30:00+00:00,2024-10-26 17:30:00+00:00,-06:00:00,False,Mexico City,1248,9620,Practice 3,Practice,2024
+65,Mexico City,MEX,8,Mexico,2024-10-26 22:00:00+00:00,2024-10-26 21:00:00+00:00,-06:00:00,False,Mexico City,1248,9621,Qualifying,Qualifying,2024
+65,Mexico City,MEX,8,Mexico,2024-10-27 22:00:00+00:00,2024-10-27 20:00:00+00:00,-06:00:00,False,Mexico City,1248,9625,Race,Race,2024
+14,Interlagos,BRA,10,Brazil,2024-11-01 15:30:00+00:00,2024-11-01 14:30:00+00:00,-03:00:00,False,São Paulo,1249,9626,Practice 1,Practice,2024
+14,Interlagos,BRA,10,Brazil,2024-11-01 19:14:00+00:00,2024-11-01 18:30:00+00:00,-03:00:00,False,São Paulo,1249,9631,Sprint Qualifying,Qualifying,2024
+14,Interlagos,BRA,10,Brazil,2024-11-02 15:00:00+00:00,2024-11-02 14:00:00+00:00,-03:00:00,False,São Paulo,1249,9635,Sprint,Race,2024
+14,Interlagos,BRA,10,Brazil,2024-11-03 11:30:00+00:00,2024-11-03 10:30:00+00:00,-03:00:00,False,São Paulo,1249,9627,Qualifying,Qualifying,2024
+14,Interlagos,BRA,10,Brazil,2024-11-03 17:30:00+00:00,2024-11-03 15:30:00+00:00,-03:00:00,False,São Paulo,1249,9636,Race,Race,2024
+152,Las Vegas,USA,19,United States,2024-11-22 03:30:00+00:00,2024-11-22 02:30:00+00:00,-08:00:00,False,Las Vegas,1250,9637,Practice 1,Practice,2024
+152,Las Vegas,USA,19,United States,2024-11-22 07:00:00+00:00,2024-11-22 06:00:00+00:00,-08:00:00,False,Las Vegas,1250,9638,Practice 2,Practice,2024
+152,Las Vegas,USA,19,United States,2024-11-23 03:30:00+00:00,2024-11-23 02:30:00+00:00,-08:00:00,False,Las Vegas,1250,9639,Practice 3,Practice,2024
+152,Las Vegas,USA,19,United States,2024-11-23 07:00:00+00:00,2024-11-23 06:00:00+00:00,-08:00:00,False,Las Vegas,1250,9640,Qualifying,Qualifying,2024
+152,Las Vegas,USA,19,United States,2024-11-24 07:59:59+00:00,2024-11-24 06:00:00+00:00,-08:00:00,False,Las Vegas,1250,9644,Race,Race,2024
+150,Lusail,QAT,149,Qatar,2024-11-29 14:30:00+00:00,2024-11-29 13:30:00+00:00,03:00:00,False,Lusail,1251,9645,Practice 1,Practice,2024
+150,Lusail,QAT,149,Qatar,2024-11-29 18:14:00+00:00,2024-11-29 17:30:00+00:00,03:00:00,False,Lusail,1251,9650,Sprint Qualifying,Qualifying,2024
+150,Lusail,QAT,149,Qatar,2024-11-30 15:00:00+00:00,2024-11-30 14:00:00+00:00,03:00:00,False,Lusail,1251,9654,Sprint,Race,2024
+150,Lusail,QAT,149,Qatar,2024-11-30 19:00:00+00:00,2024-11-30 18:00:00+00:00,03:00:00,False,Lusail,1251,9646,Qualifying,Qualifying,2024
+150,Lusail,QAT,149,Qatar,2024-12-01 18:00:00+00:00,2024-12-01 16:00:00+00:00,03:00:00,False,Lusail,1251,9655,Race,Race,2024
+70,Yas Marina Circuit,UAE,21,United Arab Emirates,2024-12-06 10:30:00+00:00,2024-12-06 09:30:00+00:00,04:00:00,False,Yas Island,1252,9461,Practice 1,Practice,2024
+70,Yas Marina Circuit,UAE,21,United Arab Emirates,2024-12-06 14:00:00+00:00,2024-12-06 13:00:00+00:00,04:00:00,False,Yas Island,1252,9656,Practice 2,Practice,2024
+70,Yas Marina Circuit,UAE,21,United Arab Emirates,2024-12-07 11:30:00+00:00,2024-12-07 10:30:00+00:00,04:00:00,False,Yas Island,1252,9657,Practice 3,Practice,2024
+70,Yas Marina Circuit,UAE,21,United Arab Emirates,2024-12-07 15:00:00+00:00,2024-12-07 14:00:00+00:00,04:00:00,False,Yas Island,1252,9658,Qualifying,Qualifying,2024
+70,Yas Marina Circuit,UAE,21,United Arab Emirates,2024-12-08 15:00:00+00:00,2024-12-08 13:00:00+00:00,04:00:00,False,Yas Island,1252,9662,Race,Race,2024
