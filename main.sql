@@ -51,3 +51,26 @@ FROM session_result s
 
 
 -- **************** CHECKING PITS *****************
+
+WITH pits AS (
+    SELECT
+        driver_number,
+        COUNT(*) AS qty_pits,
+        AVG(lane_duration) AS pit_avg_time
+    FROM pit
+    GROUP BY driver_number
+    )
+SELECT
+    d.full_name AS driver,
+    d.team_name AS team,
+    s.position,
+    qty_pits,
+    pit_avg_time
+FROM pits p
+    JOIN drivers d
+        ON p.driver_number = d.driver_number
+    JOIN session_result s
+        ON d.driver_number = s.driver_number
+WHERE s.position IS NOT NULL
+ORDER BY s.position;
+
