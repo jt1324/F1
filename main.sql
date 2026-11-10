@@ -98,3 +98,27 @@ FROM fastest t
         ON t.driver_number = d.driver_number
     JOIN meetings m
         ON t.meeting_key = m.meeting_key;
+
+
+-- **************** HIGHEST SPEED *****************
+
+WITH speed AS (
+    SELECT
+        st_speed AS speed,
+        driver_number,
+        meeting_key
+    FROM laps
+    WHERE st_speed IS NOT NULL
+    ORDER BY st_speed DESC
+    LIMIT 1
+)
+SELECT 
+    d.full_name AS driver,
+    d.team_name AS team,
+    m.meeting_name AS gp,
+    speed
+FROM speed s
+    JOIN drivers d
+        ON s.driver_number = d.driver_number
+    JOIN meetings m
+        ON s.meeting_key = m.meeting_key;
