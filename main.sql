@@ -74,3 +74,27 @@ FROM pits p
 WHERE s.position IS NOT NULL
 ORDER BY s.position;
 
+
+-- **************** FASTEST LAP *****************
+
+WITH fastest AS (
+    SELECT
+        driver_number,
+        meeting_key,
+        MIN(lap_duration) AS fastest_lap
+    FROM laps
+    GROUP BY 1
+    HAVING lap_duration IS NOT NULL
+    ORDER BY 2
+    LIMIT 1
+)
+SELECT
+    d.full_name AS driver,
+    d.team_name AS team,
+    m.meeting_name AS gp,
+    fastest_lap
+FROM fastest t
+    JOIN drivers d
+        ON t.driver_number = d.driver_number
+    JOIN meetings m
+        ON t.meeting_key = m.meeting_key;
