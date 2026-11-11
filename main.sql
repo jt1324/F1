@@ -151,6 +151,7 @@ SELECT
 FROM speed s
     JOIN drivers d
         ON s.driver_number = d.driver_number
+        AND s.meeting_key = d.meeting_key
     JOIN meetings m
         ON s.meeting_key = m.meeting_key;
 
