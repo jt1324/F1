@@ -35,69 +35,100 @@ FROM weather;
 
 -- **************** CHECKING RESULTS *****************
 
-SELECT
-    m.meeting_name AS race,
-    SUBSTR(m.date_start, 1, 10) AS event_date,
-    s.number_of_laps AS laps,
-    s.position,
-    d.full_name AS driver,
-    d.team_name AS team,
-    s.points
-FROM session_result s
-    JOIN meetings m
-        ON s.meeting_key = m.meeting_key
-    JOIN drivers d
-        ON s.driver_number = d.driver_number;
+WITH dupe AS (
+    SELECT
+        m.meeting_name AS race,
+        SUBSTR(m.date_start, 1, 10) AS event_date,
+        s.number_of_laps AS laps,
+        s.position,
+        d.full_name AS driver,
+        d.team_name AS team,
+        CAST(s.points AS INTEGER) AS points
+    FROM session_result s
+        LEFT JOIN meetings m
+            ON s.meeting_key = m.meeting_key
+        LEFT JOIN drivers d
+            ON s.driver_number = d.driver_number
+    WHERE position = 1 AND strftime('%Y', event_date) = '2025'
+)
+SELECT 
+    DISTINCT *
+FROM dupe;
 
 
 -- **************** CHECKING PITS *****************
 
-WITH pits AS (
+WITH pit_data AS (
+    WITH pits AS (
+        SELECT
+            meeting_key,
+            driver_number,
+            COUNT(*) AS qty_pits,
+            AVG(lane_duration) AS pit_avg_time
+        FROM pit
+        GROUP BY driver_number, meeting_key
+        )
     SELECT
-        driver_number,
-        COUNT(*) AS qty_pits,
-        AVG(lane_duration) AS pit_avg_time
-    FROM pit
-    GROUP BY driver_number
-    )
+        m.meeting_name AS race,
+        d.full_name AS driver,
+        d.team_name AS team,
+        s.position,
+        qty_pits,
+        pit_avg_time
+    FROM pits p
+        JOIN drivers d
+            ON p.driver_number = d.driver_number
+            AND p.meeting_key = d.meeting_key
+        JOIN session_result s
+            ON d.driver_number = s.driver_number
+            AND p.meeting_key = s.meeting_key
+        JOIN meetings m
+            ON p.meeting_key = m.meeting_key
+            AND p.meeting_key = m.meeting_key
+    WHERE s.position IS NOT NULL
+    ORDER BY pit_avg_time
+)
 SELECT
-    d.full_name AS driver,
-    d.team_name AS team,
-    s.position,
-    qty_pits,
-    pit_avg_time
-FROM pits p
-    JOIN drivers d
-        ON p.driver_number = d.driver_number
-    JOIN session_result s
-        ON d.driver_number = s.driver_number
-WHERE s.position IS NOT NULL
-ORDER BY s.position;
+    DISTINCT *
+FROM pit_data;
 
 
 -- **************** FASTEST LAP *****************
 
-WITH fastest AS (
+WITH lap_data AS (
+    WITH fastest AS (
+        SELECT
+            driver_number,
+            meeting_key,
+            MIN(lap_duration) AS fastest_lap
+        FROM laps
+        GROUP BY 1, 2
+        HAVING lap_duration IS NOT NULL
+        ORDER BY 3
+        -- LIMIT 1
+    )
     SELECT
-        driver_number,
-        meeting_key,
-        MIN(lap_duration) AS fastest_lap
-    FROM laps
-    GROUP BY 1
-    HAVING lap_duration IS NOT NULL
-    ORDER BY 2
-    LIMIT 1
+        d.full_name AS driver,
+        d.team_name AS team,
+        m.meeting_name AS gp,
+        fastest_lap,
+        ROW_NUMBER() OVER(
+            PARTITION BY m.meeting_name
+        ) AS r_n
+    FROM fastest t
+        JOIN drivers d
+            ON t.driver_number = d.driver_number
+        JOIN meetings m
+            ON t.meeting_key = m.meeting_key
 )
 SELECT
-    d.full_name AS driver,
-    d.team_name AS team,
-    m.meeting_name AS gp,
+    driver,
+    team,
+    gp,
     fastest_lap
-FROM fastest t
-    JOIN drivers d
-        ON t.driver_number = d.driver_number
-    JOIN meetings m
-        ON t.meeting_key = m.meeting_key;
+FROM lap_data
+WHERE r_n = 1
+ORDER BY fastest_lap;
 
 
 -- **************** HIGHEST SPEED *****************
@@ -123,4 +154,3 @@ FROM speed s
     JOIN meetings m
         ON s.meeting_key = m.meeting_key;
 
-        
