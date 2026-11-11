@@ -178,3 +178,27 @@ SELECT
 FROM wins
 GROUP BY driver
 ORDER BY COUNT(*) DESC;
+
+
+-- **************** TEAM WITH MORE WINS IN 2025 *****************
+
+WITH wins AS (
+    SELECT 
+        m.meeting_name AS race,
+        d.team_name AS team,
+        position
+    FROM session_result s
+        JOIN drivers d
+            ON s.driver_number = d.driver_number
+            AND s.meeting_key = d.meeting_key
+        JOIN meetings m
+            ON s.meeting_key = m.meeting_key
+    WHERE position = 1 AND strftime('%Y', m.date_start) = '2025'
+)
+SELECT
+    team,
+    COUNT(*) AS wins
+FROM wins
+GROUP BY team
+ORDER BY COUNT(*) DESC;
+
