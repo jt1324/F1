@@ -122,3 +122,5 @@ FROM speed s
         ON s.driver_number = d.driver_number
     JOIN meetings m
         ON s.meeting_key = m.meeting_key;
+
+        
