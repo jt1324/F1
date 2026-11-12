@@ -202,3 +202,25 @@ FROM wins
 GROUP BY team
 ORDER BY COUNT(*) DESC;
 
+
+-- **************** POINTS PER TEAM IN 2025 *****************
+
+WITH points AS (
+    SELECT
+        d.full_name,
+        d.team_name AS team,
+        s.points
+    FROM session_result s
+        JOIN drivers d
+            ON s.driver_number = d.driver_number
+            AND s.meeting_key = d.meeting_key
+        JOIN meetings m
+            ON s.meeting_key = m.meeting_key
+    WHERE strftime('%Y', m.date_start) = '2025'
+)
+SELECT
+    team,
+    SUM(points) AS total_points
+FROM points
+GROUP BY team
+ORDER BY SUM(points) DESC;
