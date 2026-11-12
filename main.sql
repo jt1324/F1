@@ -226,7 +226,7 @@ GROUP BY team
 ORDER BY SUM(points) DESC;
 
 
--- **************** POINTS PER DRIVER PER RACE  AND TOTAL IN 2025 *****************
+-- **************** POINTS PER DRIVER PER RACE AND TOTAL IN 2025 *****************
 
 SELECT
     full_name AS driver,
@@ -247,33 +247,10 @@ WHERE SUBSTR(date_start, 1, 4) = '2025'
 UNION ALL
 
 SELECT
-    CASE
-        WHEN full_name = 'Alexander ALBON' THEN 'Alexander ALBON - Total'
-        WHEN full_name = 'Carlos SAINZ' THEN 'Carlos SAINZ - Total'
-        WHEN full_name = 'Charles LECLERC' THEN 'Charles LECLERC - Total'
-        WHEN full_name = 'Esteban OCON' THEN 'Esteban OCON - Total'
-        WHEN full_name = 'Fernando ALONSO' THEN 'Fernando ALONSO - Total'
-        WHEN full_name = 'Franco COLAPINTO' THEN 'Franco COLAPINTO - Total'
-        WHEN full_name = 'Gabriel BORTOLETO' THEN 'Gabriel BORTOLETO - Total'
-        WHEN full_name = 'George RUSSELL' THEN 'George RUSSELL - Total'
-        WHEN full_name = 'Isack HADJAR' THEN 'Isack HADJAR - Total'
-        WHEN full_name = 'Jack DOOHAN' THEN 'Jack DOOHAN - Total'
-        WHEN full_name = 'Kimi ANTONELLI' THEN 'Kimi ANTONELLI - Total'
-        WHEN full_name = 'Lance STROLL' THEN 'Lance STROLL - Total'
-        WHEN full_name = 'Lando NORRIS' THEN 'Lando NORRIS - Total'
-        WHEN full_name = 'Lewis HAMILTON' THEN 'Lewis HAMILTON - Total'
-        WHEN full_name = 'Liam LAWSON' THEN 'Liam LAWSON - Total'
-        WHEN full_name = 'Max VERSTAPPEN' THEN 'Max VERSTAPPEN - Total'
-        WHEN full_name = 'Nico HULKENBERG' THEN 'Nico HULKENBERG - Total'
-        WHEN full_name = 'Oliver BEARMAN' THEN 'Oliver BEARMAN - Total'
-        WHEN full_name = 'Oscar PIASTRI' THEN 'Oscar PIASTRI - Total'
-        WHEN full_name = 'Pierre GASLY' THEN 'Pierre GASLY - Total'
-        WHEN full_name = 'Yuki TSUNODA' THEN 'Yuki TSUNODA - Total'
-        ELSE 'Unknown'
-    END AS driver,
-    '' AS race,
-    '' AS position,
-    SUM(points) AS points
+    full_name || ' - Total',
+    '',
+    '',
+    SUM(points)
 FROM session_result s
     JOIN meetings m
         ON s.meeting_key = m.meeting_key
