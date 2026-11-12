@@ -35,25 +35,22 @@ FROM weather;
 
 -- **************** CHECKING RESULTS *****************
 
-WITH dupe AS (
-    SELECT
-        m.meeting_name AS race,
-        SUBSTR(m.date_start, 1, 10) AS event_date,
-        s.number_of_laps AS laps,
-        s.position,
-        d.full_name AS driver,
-        d.team_name AS team,
-        CAST(s.points AS INTEGER) AS points
-    FROM session_result s
-        LEFT JOIN meetings m
-            ON s.meeting_key = m.meeting_key
-        LEFT JOIN drivers d
-            ON s.driver_number = d.driver_number
-    WHERE position = 1 AND strftime('%Y', event_date) = '2025'
-)
-SELECT 
-    DISTINCT *
-FROM dupe;
+
+SELECT
+    m.meeting_name AS race,
+    SUBSTR(m.date_start, 1, 10) AS event_date,
+    s.number_of_laps AS laps,
+    s.position,
+    d.full_name AS driver,
+    d.team_name AS team,
+    CAST(s.points AS INTEGER) AS points
+FROM session_result s
+    LEFT JOIN meetings m
+        ON s.meeting_key = m.meeting_key
+    LEFT JOIN drivers d
+        ON s.driver_number = d.driver_number
+        AND s.meeting_key = d.meeting_key
+WHERE position = 1 AND strftime('%Y', event_date) = '2025';
 
 
 -- **************** CHECKING PITS *****************
@@ -102,8 +99,8 @@ WITH lap_data AS (
             meeting_key,
             MIN(lap_duration) AS fastest_lap
         FROM laps
+        WHERE lap_duration IS NOT NULL
         GROUP BY 1, 2
-        HAVING lap_duration IS NOT NULL
         ORDER BY 3
         -- LIMIT 1
     )
@@ -114,6 +111,7 @@ WITH lap_data AS (
         fastest_lap,
         ROW_NUMBER() OVER(
             PARTITION BY m.meeting_name
+            ORDER BY fastest_lap
         ) AS r_n
     FROM fastest t
         JOIN drivers d
@@ -232,7 +230,7 @@ SELECT
     full_name AS driver,
     m.meeting_name AS race,
     CASE
-        WHEN position IS NULL THEN 'Not FInished'
+        WHEN position IS NULL THEN 'Not Finished'
         ELSE position
     END as position,
     printf('%,d', points) AS points
